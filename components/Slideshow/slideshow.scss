@@ -1,0 +1,47 @@
+.slideshow{
+  position: relative;
+  &__slides{
+    width: 100%;
+
+  }
+  .slides{
+    &-nav {
+      background-color: transparent;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      width: 36px;
+      z-index: 10;
+      .slideshow & {
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.3);
+          display: block;
+        }
+      }
+      &:after {
+        color: white;
+        display: none;
+
+      }
+
+      &--prev {
+        left: 0;
+        &:after {
+          content: '«'
+        }
+      }
+      &--next {
+        right: 0;
+        &:after {
+          content: '»'
+        }
+      }
+    }
+  }
+  .slide{
+    display:none;
+    &--active {
+      display: block;
+    }
+  }
+}
