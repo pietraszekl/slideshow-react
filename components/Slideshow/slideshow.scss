@@ -1,29 +1,35 @@
 .slideshow{
   position: relative;
+  &:hover {
+    .slideshow__nav{
+      visibility: visible;
+    }
+  }
   &__slides{
     width: 100%;
-
+  }
+  &__nav{
+    visibility: hidden;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
   }
   .slides{
     &-nav {
-      background-color: transparent;
+      background-color: rgba(0,0,0,.15);
       height: 100%;
       position: absolute;
       top: 0;
       width: 36px;
       z-index: 10;
-      .slideshow & {
-        &:hover {
-          background-color: rgba(0, 0, 0, 0.3);
-          display: block;
-        }
+      display: table;
+      cursor: pointer;
+      &:after{
+        display: table-cell;
+        vertical-align:middle;
       }
-      &:after {
-        color: white;
-        display: none;
-
-      }
-
       &--prev {
         left: 0;
         &:after {
