@@ -25,12 +25,13 @@ render() {
 ```
 ## Details
 `<Slideshow>` component is combined out of 3 main components:
+
 1. `<Slides>`: It's important that each slide to have `id` key
-  - Child component: `<Slide>`
+  * Child component: `<Slide>`
 2. `<Controls>`: are visible on the edges of the Slideshow.
-  - Active class name:  `pagination__item--active`
+  * Active class name:  `pagination__item--active`
 3. `<Pagination>`: visible at the bottom of the Slideshow.
-  - Child component: `<Pager>`
+  * Child component: `<Pager>`
 
 and uses `config` property to rule them all ;)
 
