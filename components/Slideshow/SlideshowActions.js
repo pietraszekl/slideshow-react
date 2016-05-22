@@ -11,3 +11,15 @@ export function prevSlide(){
     type: "PREV_SLIDE"
   });
 }
+
+export function toggleSlide(id){
+  dispatcher.dispatch({
+    type: "TOGGLE_SLIDE",
+    source: id
+  });
+}
+export function autoRotate(){
+  dispatcher.dispatch({
+    type: "AUTO_ROTATE"
+  });
+}

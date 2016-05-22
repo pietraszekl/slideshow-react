@@ -1,11 +1,12 @@
 import React from "react";
 import Slide from "./Slide";
+import * as SlideshowActions from "./SlideshowActions";
 import SlideshowStore from "./SlideshowStore";
 
 class Slides extends React.Component{
 	constructor(props) {
 		super();
-		this.currentSlide = props.currentSlide
+		this.currentSlide = props.currentSlide;
 		this.data = props.data;
 		this.state={
 			currentSlide: this.currentSlide,
@@ -23,7 +24,7 @@ class Slides extends React.Component{
 		var SlidesList = this.data.map(function (slide, i) {
 			var isActive = self.state.currentSlide === i;
 			return (
-				<Slide active={isActive} key={i} text={slide.text} caption={slide.caption}/>
+				<Slide active={isActive} key={slide.id} text={slide.text} caption={slide.caption}/>
 			);
 		});
 		return (
