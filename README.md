@@ -63,3 +63,8 @@ This is where all the `<Slideshow>` actions are handled. This inlcudes: getAll, 
 
 ## Example
 Working example is implemented on my personal website http://looca.co.uk for testimonials component. Source code https://github.com/pietraszekl/looca-reactjs
+
+## Testing
+- `npm install` - to install all dependencies needed to run tests
+- `npm run test` - to run all tests located under 'tests' directory
+- `npm run test:watch` - to test on every file change.

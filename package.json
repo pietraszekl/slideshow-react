@@ -1,0 +1,31 @@
+{
+  "name": "slideshow-react",
+  "version": "1.0.0",
+  "description": "Slideshow/Carousel plugin for ReactJS web apps.",
+  "main": "dispatcher.js",
+  "scripts": {
+    "test": "mocha tests/ --compilers js:babel-core/register",
+    "test:watch": "npm test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pietraszekl/slideshow-react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pietraszekl/slideshow-react/issues"
+  },
+  "homepage": "https://github.com/pietraszekl/slideshow-react#readme",
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-router": "^2.0.1"
+  }
+}
