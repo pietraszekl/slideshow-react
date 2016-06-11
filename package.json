@@ -4,7 +4,7 @@
   "description": "Slideshow/Carousel plugin for ReactJS web apps.",
   "main": "dispatcher.js",
   "scripts": {
-    "test": "mocha tests/ --compilers js:babel-core/register",
+    "test": "mocha test/ --compilers js:babel-core/register",
     "test:watch": "npm test -- --watch"
   },
   "repository": {
