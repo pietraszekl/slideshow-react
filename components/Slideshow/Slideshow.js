@@ -33,7 +33,7 @@ class Slideshow extends React.Component{
 			<div className="slideshow">
 				<Slides data={slideshow.data} currentSlide={slideshow.current}/>
 				<Controls isVisible={showControls} isAutoRotate={autoRotateSpeed}/>
-				<Pagination isVisible={ showPagination} data={slideshow.data} currentSlide={slideshow.current}/>
+				<Pagination isVisible={showPagination} data={slideshow.data} currentSlide={slideshow.current}/>
 			</div>
 		);
 	}

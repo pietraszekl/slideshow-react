@@ -8,7 +8,7 @@ class Pagination extends React.Component{
     this.currentSlide = props.currentSlide
     this.data = props.data;
     this.state={
-      currentSlide: this.currentSlide,
+      currentSlide: this.currentSlide
     }
   }
   componentWillMount(){
