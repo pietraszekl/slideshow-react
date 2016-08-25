@@ -5,12 +5,16 @@ class Controls extends React.Component{
   constructor(){
     super();
   }
-  componentWillMount(){
+  componentDidMount(){
+    this.interval = setInterval(function(){
+      SlideshowActions.autoRotate()
+    }, this.props.isAutoRotate);
     if(this.props.isAutoRotate){
-      setInterval(function(){
-        SlideshowActions.autoRotate()
-      }, this.props.isAutoRotate);
+      this.interval;
     }
+  }
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
   slidePrev() {
     SlideshowActions.prevSlide()
