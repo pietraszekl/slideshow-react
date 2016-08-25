@@ -10,13 +10,14 @@ chai.use(chaiEnzyme())
 
 
 describe('<Pagination />',() => {
-  const pagination = shallow(<Pagination />);
+  const data = [{id:1},{id:2},{id:3}]
   const slide = 1;
-  beforeEach(() => {
-    pagination.setState({
-      currentSlide: slide
-    })
+  const pagination = shallow(<Pagination isVisible={true} data={data}/>);
+
+  pagination.setState({
+    currentSlide: slide
   });
+
   it('state of currentSlide should be equal current slide prop', () =>{
     expect(pagination.state().currentSlide).to.equal(slide);
   });
@@ -25,6 +26,10 @@ describe('<Pagination />',() => {
     it('should have `.pagination` class ', () => {
       expect(pagination.find('div')).to.have.className('pagination')
     });
-  })
+
+    it('should check that the <Pager /> renders', () => {
+      expect(pagination.children()).to.have.length(3);
+    });
+  });
 
 });
