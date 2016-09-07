@@ -1,5 +1,6 @@
 # slideshow-react
 Slideshow/Carousel plugin for ReactJS web apps.
+[![Travis](https://travis-ci.org/pietraszekl/slideshow-react.svg?branch=master)](https://travis-ci.org/pietraszekl/slideshow-react)
 
 ## Install
 To include it in to your project copy 'Slideshow' component directory to the source location of your app under components directory and 'dispatcher.js' (if not exiting already) to the same location as your main JS file.
